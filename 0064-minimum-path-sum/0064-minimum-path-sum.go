@@ -1,9 +1,9 @@
 func minPathSum(grid [][]int) int {
     m := len(grid)
     n := len(grid[0])
-    prev := make([]int, n) // Corrected initialization
+    prev := make([]int, n)
     for i := 0; i < m; i++ {
-        curr := make([]int, n) // Corrected initialization
+        curr := make([]int, n)
         for j := 0; j < n; j++ {
             if i == 0 && j == 0 {
                 curr[j] = grid[i][j]
